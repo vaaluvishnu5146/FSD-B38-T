@@ -1,0 +1,31 @@
+a {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+.square {
+  position: relative;
+  background: green;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.square:hover {
+  background: yellowgreen;
+}
+
+.squarev1 {
+  width: 100px;
+  height: 100px;
+}
+
+.squarev2 {
+  width: 300px;
+  height: 300px;
+}
