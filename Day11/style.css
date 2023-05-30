@@ -1,0 +1,143 @@
+html,
+body {
+  /* 1em is 20px */
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ball {
+  background: purple;
+  min-width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.link {
+  width: 120px;
+  height: 50px;
+  background: #dedede;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background: white;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background: grey;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background: blue;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background: green;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background: white;
+  }
+}
+
+/* GRID SYSTEM */
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "left feed right";
+  grid-template-columns: 30% 40% 30%;
+  > .left-menu {
+    grid-area: left;
+  }
+  > .feed-container {
+    grid-area: feed;
+    overflow-y: scroll;
+
+    > .status-container {
+      display: flex;
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+
+      > .ball {
+        margin: 0 10px 0 0;
+      }
+    }
+
+    > main {
+      > .card {
+        width: 100%;
+      }
+    }
+  }
+  > .right-menu {
+    grid-area: right;
+  }
+}
