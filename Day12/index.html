@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="section-container">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+              alt="Logo"
+              width="auto"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- DELIVERY OR PICKUP TAB -->
+    <div class="container-fluid">
+      <div class="section-container">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a
+              class="d-flex align-items-center nav-link active"
+              aria-current="page"
+              href="#"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center me-2 tab-image"
+              >
+                <img
+                  width="60%"
+                  src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png"
+                />
+              </div>
+              <p>Delivery</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center nav-link" href="#"
+              ><div
+                class="d-flex align-items-center justify-content-center me-2 tab-image"
+              >
+                <img
+                  width="60%"
+                  src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png"
+                />
+              </div>
+              <p>Dine Out</p></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center nav-link" href="#">
+              <div
+                class="d-flex align-items-center justify-content-center me-2 tab-image"
+              >
+                <img
+                  width="60%"
+                  src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png"
+                />
+              </div>
+              <p>Night Life</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- FILTER BADGES -->
+    <section id="filter-badge-section" class="container-fluid">
+      <div class="section-container d-flex py-3">
+        <button type="button" class="btn btn-sm filter-buttons me-2">
+          <span class="material-symbols-outlined"> tune </span>
+          Filters
+        </button>
+        <button type="button" class="btn btn-sm filter-buttons me-2">
+          Ratings
+        </button>
+        <button type="button" class="btn btn-sm filter-buttons me-2">
+          Pure Veg
+        </button>
+        <button type="button" class="btn btn-sm filter-buttons">
+          Cuisines
+        </button>
+      </div>
+    </section>
+    <!-- CATEGORY SECTION -->
+    <section class="container-fluid categories-section">
+      <div class="section-container py-3">
+        <div class="row mb-4">
+          <h5>Inspiration for your first order</h5>
+        </div>
+        <div class="row">
+          <div id="categories-slider" class="categories-slider">
+            <div class="categories-card">
+              <div class="card-content">
+                <img
+                  class="categories-image mb-1"
+                  src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+                />
+                <p class="text-center">Pizza</p>
+              </div>
+            </div>
+            <div class="categories-card">
+              <div class="card-content">
+                <img
+                  class="categories-image mb-1"
+                  src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+                />
+                <p class="text-center">Pizza</p>
+              </div>
+            </div>
+            <div class="categories-card">
+              <div class="card-content">
+                <img
+                  class="categories-image mb-1"
+                  src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+                />
+                <p class="text-center">Pizza</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RESTAURANTS DELIVERING -->
+    <section class="container-fluid restaurants-section py-3">
+      <div class="section-container">
+        <div class="row mb-3">
+          <h5>Delivery Restaurants in Chennai</h5>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="card p-1">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/9/20222729/463d10a6b65e724e554fe542e78c5784_o2_featured_v2.jpg?output-format=webp"
+                class="card-img-top"
+                height="248px"
+                style="border-radius: 10px; object-fit: cover"
+                alt="biriyani by kilo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-1">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/9/19772749/e8172282b173fb9f2670b20b6334187a_o2_featured_v2.jpg?output-format=webp"
+                class="card-img-top"
+                height="248px"
+                style="border-radius: 10px; object-fit: cover"
+                alt="Mama's paratha"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-1">
+              <img
+                src="https://b.zmtcdn.com/data/pictures/6/19152746/73695aaf4ef6ccdabfd3f6e072f12b0d_o2_featured_v2.jpg?output-format=webp"
+                class="card-img-top"
+                height="248px"
+                style="border-radius: 10px; object-fit: cover"
+                alt="Ma-vaishno restaurant"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
