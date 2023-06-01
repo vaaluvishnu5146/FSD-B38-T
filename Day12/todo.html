@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos | A work day companion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./todo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="d-flex todo-container">
+        <div class="form-container container py-5" id="form-container">
+          <h3>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >What new task?</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="task"
+                placeholder="Enter your task"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Task Description</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="taskDescription"
+                placeholder="Enter your task description"
+              />
+            </div>
+            <button
+              class="btn btn-primary"
+              type="button"
+              onclick="handleTask()"
+            >
+              Save Task
+            </button>
+          </h3>
+        </div>
+        <div class="list-container container py-5" id="list-container">
+          <h3>Todo Container</h3>
+          <div class="row" id="todo-listings"></div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tasks = [];
+      function handleTask() {
+        const task = document.getElementById("task");
+        tasks.push(task.value);
+        renderTasks(tasks);
+        task.value = "";
+      }
+
+      function renderTasks(tasks = []) {
+        const listingContainer = document.getElementById("todo-listings");
+        listingContainer.innerHTML = "";
+        const todoCards = [];
+        if (tasks.length > 0) {
+          tasks.forEach((_t) => {
+            const cardNode = document.createElement("div");
+            cardNode.setAttribute("class", "col-2");
+            cardNode.innerHTML = `<div class="card">
+                <div class="card-body">${_t}</div>
+              </div>`;
+            todoCards.push(cardNode);
+          });
+        }
+        listingContainer.append(...todoCards);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "label": "Pizza",
+      "image": "https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+    },
+    {
+      "label": "Paratha",
+      "image": "https://b.zmtcdn.com/data/o2_assets/2b5a5b533473aada22015966f668e30e1633434990.png"
+    },
+    {
+      "label": "Chole Bhature",
+      "image": "https://b.zmtcdn.com/data/dish_images/c953e5ca07150e9a51f8b21102e20f7e1634805157.png"
+    },
+    {
+      "label": "Sandwitch",
+      "image": "https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png"
+    },
+    {
+      "label": "Dosa",
+      "image": "https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png"
+    },
+    {
+      "label": "Kachori",
+      "image": "https://b.zmtcdn.com/data/o2_assets/f9d277eb1668d7abf9235302402b06001632716602.png"
+    },
+    {
+      "label": "Idli",
+      "image": "https://b.zmtcdn.com/data/dish_images/d9766dd91cd75416f4f65cf286ca84331634805483.png"
+    },
+    {
+      "label": "Burger",
+      "image": "https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"
+    }
+  ]
+}

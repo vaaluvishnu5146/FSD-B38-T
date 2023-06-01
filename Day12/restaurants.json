@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "restaurantName": "Maa Vaishno Restaurant",
+      "restaurantImage": "https://b.zmtcdn.com/data/pictures/6/19152746/73695aaf4ef6ccdabfd3f6e072f12b0d_o2_featured_v2.jpg?output-format=webp",
+      "cuisine": ["North Indian"],
+      "ratings": 3,
+      "offer": "50% OFF Upto 100",
+      "minTimeToDeliver": "23",
+      "minQuanitityPrice": "100 for 1"
+    },
+    {
+      "restaurantName": "Mama's Parantha",
+      "restaurantImage": "https://b.zmtcdn.com/data/pictures/9/19772749/e8172282b173fb9f2670b20b6334187a_o2_featured_v2.jpg?output-format=webp",
+      "cuisine": ["North Indian", "Fast Food", "Sandwich", "Chinese"],
+      "ratings": 3,
+      "offer": "50% OFF Upto 100",
+      "minTimeToDeliver": "25",
+      "minQuanitityPrice": "100 for 1"
+    },
+    {
+      "restaurantName": "Gopal Das Paranthe wale",
+      "restaurantImage": "https://b.zmtcdn.com/data/pictures/6/19901356/37918ab27888976e75e41fceef4280e1_o2_featured_v2.jpg?output-format=webp",
+      "cuisine": ["North Indian"],
+      "ratings": 3,
+      "offer": "50% OFF Upto 100",
+      "minTimeToDeliver": "28",
+      "minQuanitityPrice": "100 for 1"
+    }
+  ]
+}

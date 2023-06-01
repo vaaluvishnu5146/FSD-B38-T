@@ -25,6 +25,16 @@ p {
   margin: 0px;
 }
 
+.fs-7 {
+  font-size: 0.7rem;
+}
+.fs-8 {
+  font-size: 0.8rem;
+}
+.fs-9 {
+  font-size: 0.9rem;
+}
+
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-link:hover {
   border-color: transparent;
@@ -61,7 +71,7 @@ p {
 
 .section-container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0px auto;
 }
 
@@ -106,3 +116,21 @@ p {
     }
   }
 }
+
+/* RESTAURANT CARD */
+
+/* .restaurantCard {
+  > img {
+  }
+  > .card-body {
+    > row {
+      > .col-8 {
+        > .restaurantTitle {
+          font-size: 0.8rem;
+        }
+      }
+      > .restaurantRatings {
+      }
+    }
+  }
+} */
