@@ -29,14 +29,21 @@ function renderRestaurantCard(data = []) {
       const cardNode = document.createElement("div");
       cardNode.setAttribute("class", "col-4");
       cardNode.innerHTML = `
-            <div class="card restaurant-card p-1">
-              <img
-                src="${_d.restaurantImage}"
-                class="card-img-top"
-                height="248px"
-                style="border-radius: 10px; object-fit: cover"
-                alt="${_d.restaurantName}"
-              />
+            <div class="card restaurantCard p-1">
+              <div class="cardHead">
+                <div class="promotedTag"><p class="fs-5">Promoted</p></div>
+                <img
+                  src="${_d.restaurantImage}"
+                  class="card-img-top"
+                  height="248px"
+                  style="border-radius: 10px; object-fit: cover;"
+                  alt="${_d.restaurantName}"
+                />
+                <div class="offerRow">
+                  <div class="offer d-flex align-items-center"><p class="fs-7">50% offer upto 150</p></div>
+                  <div class="timeTaken fs-7">29min</div>
+                </div>
+              </div>
               <div class="card-body">
                 <div class="row g-0 mb-2">
                  <div class="col-10"><h6 class="restaurantTitle fs-8">${_d.restaurantName}</h6></div>

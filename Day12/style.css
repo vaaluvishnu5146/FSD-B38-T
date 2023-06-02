@@ -4,6 +4,7 @@
   --light-grey200: rgb(169, 169, 169);
   --grey: rgb(105, 105, 105);
   --yellow: rgb(252, 238, 192);
+  --blue: rgb(37, 111, 239);
 }
 
 html,
@@ -24,7 +25,9 @@ h6,
 p {
   margin: 0px;
 }
-
+.fs-5 {
+  font-size: 0.5rem !important;
+}
 .fs-7 {
   font-size: 0.7rem;
 }
@@ -119,18 +122,36 @@ p {
 
 /* RESTAURANT CARD */
 
-/* .restaurantCard {
-  > img {
-  }
-  > .card-body {
-    > row {
-      > .col-8 {
-        > .restaurantTitle {
-          font-size: 0.8rem;
-        }
+.restaurantCard {
+  > .cardHead {
+    position: relative;
+    > .promotedTag {
+      color: var(--light-grey100);
+      padding: 2px;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgb(0 0 0 / 37%);
+    }
+    > .offerRow {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0px;
+      box-sizing: border-box;
+      > .offer {
+        background: var(--blue);
+        color: var(--light-grey100);
+        padding: 0px 10px;
+        height: 25px;
       }
-      > .restaurantRatings {
+      > .timeTaken {
+        background: var(--light-grey100);
+        padding: 5px;
+        border-radius: 10px;
       }
     }
   }
-} */
+}

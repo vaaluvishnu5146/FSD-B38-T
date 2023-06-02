@@ -1,0 +1,86 @@
+:root {
+  --primary: #2f3d46;
+  --secondary: #cad2c5;
+  --light: #ffffff;
+  --black: #000000;
+  --brown: #353535;
+}
+
+html,
+body {
+  /* 1em is 20px */
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.bg-primary {
+  background: var(--primary) !important;
+  color: var(--light) !important;
+}
+
+.bg-secondary {
+  background: var(--secondary);
+}
+
+/* NAVBAR STYLES */
+#brandName {
+  letter-spacing: 3px;
+}
+
+/* MAIN CONTENT AREA */
+.profile-page-container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: var(--secondary);
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 100%;
+  height: calc(100%);
+  background: var(--brown);
+  border-radius: 10px;
+}
+
+/* CONTENT AREA */
+
+.content-area {
+  height: 100%;
+}
+
+.searchFilter {
+  width: 100%;
+  height: 50px;
+  background: var(--brown);
+  border-radius: 5px;
+
+  > input {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-inline: 10px;
+    color: var(--secondary);
+  }
+}
+
+.rectangle {
+  height: 200px;
+  background: var(--brown);
+  border-radius: 10px;
+}
