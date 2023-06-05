@@ -1,5 +1,6 @@
 :root {
   --primary: rgb(239, 79, 95);
+  --light: #ffffff;
   --light-grey100: rgb(243, 243, 243);
   --light-grey200: rgb(169, 169, 169);
   --grey: rgb(105, 105, 105);
@@ -78,6 +79,20 @@ p {
   margin: 0px auto;
 }
 
+.delivery-selection-container {
+  position: sticky;
+  top: 0;
+  background: var(--light);
+  z-index: 1;
+}
+
+.filter-badge-section {
+  position: sticky;
+  top: 0;
+  background: var(--light);
+  z-index: 1;
+}
+
 .filter-buttons {
   font-size: 0.7rem;
   color: var(--light-grey);
@@ -123,35 +138,54 @@ p {
 /* RESTAURANT CARD */
 
 .restaurantCard {
-  > .cardHead {
-    position: relative;
-    > .promotedTag {
-      color: var(--light-grey100);
-      padding: 2px;
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      background: rgb(0 0 0 / 37%);
-    }
-    > .offerRow {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 10px 0px;
-      box-sizing: border-box;
-      > .offer {
-        background: var(--blue);
+  > .restaurant-card-link {
+    text-decoration: none;
+    > .cardHead {
+      position: relative;
+      > .promotedTag {
         color: var(--light-grey100);
-        padding: 0px 10px;
-        height: 25px;
+        padding: 2px;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: rgb(0 0 0 / 37%);
       }
-      > .timeTaken {
-        background: var(--light-grey100);
-        padding: 5px;
-        border-radius: 10px;
+      > .offerRow {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        > .offer {
+          background: var(--blue);
+          color: var(--light-grey100);
+          padding: 0px 10px;
+          height: 25px;
+        }
+        > .timeTaken {
+          background: var(--light-grey100);
+          padding: 5px;
+          border-radius: 10px;
+        }
       }
     }
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

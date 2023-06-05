@@ -27,9 +27,13 @@ function renderRestaurantCard(data = []) {
   if (data.length > 0) {
     data.forEach((_d) => {
       const cardNode = document.createElement("div");
-      cardNode.setAttribute("class", "col-4");
+      cardNode.setAttribute(
+        "class",
+        "col-xl-4 col-lg-4 col-md-2 col-sm-12 col-xs-12"
+      );
       cardNode.innerHTML = `
-            <div class="card restaurantCard p-1">
+            <div class="card restaurantCard p-1 mb-3">
+              <a class="restaurant-card-link">
               <div class="cardHead">
                 <div class="promotedTag"><p class="fs-5">Promoted</p></div>
                 <img
@@ -64,6 +68,7 @@ function renderRestaurantCard(data = []) {
                   </div>
                 </div>
               </div>
+              </a>
             </div>`;
       cardsArray.push(cardNode);
     });
