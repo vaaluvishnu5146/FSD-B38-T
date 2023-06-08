@@ -130,3 +130,37 @@
 //   .then((response) => response.json())
 //   .then((json) => console.log(json))
 //   .catch((error) => console.log(error));
+
+// console.log("BEFORE");
+// async function greet() {
+//   const isEven = await new Promise((res, rej) => {
+//     setTimeout(() => {
+//       res("EVEN");
+//     }, 3000);
+//   });
+//   console.log("INSIDE EVEN FUNCTION", isEven);
+//   return isEven;
+// }
+// console.log("GREET FUNCTION", greet());
+// console.log("AFTER");
+
+// async function getCountriesData() {
+//   try {
+//     const url = "https://restcountries.com/v3/all";
+//     const response = await fetch(url);
+//     const result = await response.json();
+//     printData(result);
+//   } catch (error) {
+//     console.log("ERROR", error);
+//   }
+// }
+
+// function printData(data = []) {
+//   if (data.length > 0) {
+//     data.forEach((_d) => console.log(_d.cca3));
+//   }
+// }
+
+// getCountriesData();
+const isEven = false;
+isEven ? console.log("EVEN") : console.log("ODD");
